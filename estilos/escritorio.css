@@ -1,0 +1,39 @@
+main {
+    padding: 0 15%;
+}
+
+.heroe {
+    /*flex-direction: row;
+    justify-content: center; //opcional*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.heroeInfo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-right: 80px;
+}
+
+.heroeTitulo {
+    text-align: start;
+    
+}
+
+.experienciaContenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.experienciaContenedor div {
+    margin-top: 0;
+}
+
+.formularioAsunto, .formularioMensaje {
+    min-width: 50%;
+}
+
+.formulario .boton {
+    width: 100%;
+    max-width: 50%;
+}

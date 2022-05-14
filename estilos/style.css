@@ -1,0 +1,250 @@
+/* VARIABLES */
+:root {
+    --rojo: #da0037;
+    --gris: #444444;
+    --negro: #171717;
+    --blanco: #ededed;
+    --blancoLigero: rgba(237, 237, 237, 0.5);
+    --blancoObscuro: rgba(237, 237, 237, 0.1);
+    --inter: 'Inter', sans-serif;
+    --dmSans: 'DM Sans', sans-serif;
+    --regular: 400;
+    --mediano: 500;
+    --negrtita: 700;
+    --oscuro: 900;
+}
+
+/* GLOBALES */
+* {
+	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: var(--dmSans);
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--negro);
+}
+
+h1, h2, h3 {
+    font-family: var(--inter);
+    font-weight: var(--negrita);
+    color: var(--blanco);
+}
+
+p {
+    color: var(--blanco);
+}
+
+a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+button {
+    border: none;
+    font-family: var(--dmSans);
+    font-weight: var(--negrita);
+}
+
+button: hover {
+    cursor: pointer;
+}
+
+.boton {
+    display: inline-block;
+    min-width: 144px;
+    margin: 6px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: var(--negrita);
+}
+
+.botonRojo {
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: 8px;
+    margin: 8px;
+    border-radius: 5%;
+}
+
+.botonBlanco {
+    background-color: var(--blanco);
+    color: var(--negro);
+    padding: 8px;
+    margin: 8px;
+    border-radius: 5%;
+}
+
+.botonEnviar{
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: 8px;
+    margin: 8px;
+    border-radius: 5%;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+}
+
+.headerTitulo {
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 3px;
+    font-size: 1.8rem; /*1.8rem => 18px*/
+    font-weight: var(--mediano);
+}
+
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.heroe {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.heroePerfil {
+    width: 182px;
+    height: 182px;
+}
+
+.heroeImg {
+    width: 182px;
+    height: 182px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--rojo);
+}
+
+.heroeTitulo {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: var(--oscuro);
+    color: var(--blanco);
+}
+
+.heroeTexto {
+    color: var(--blanco);
+    /*margin: 16px 0px 16px 0px;*/
+    /*margin-top: 16px;
+    margin-bottom: 16px;*/
+    margin: 16px 0;
+}
+
+.hereoBotones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.experiencia {
+    width: 100%;
+    margin: 32px 0;
+}
+
+.experienciaTitulo {
+    display: inline-block;
+    margin-bottom: 16px;
+    border-bottom: 3px solid var(--blanco);
+}
+
+.experienciaObjeto {
+    margin: 24px 0px;
+}
+
+.experienciaObjeto:nth-child(2) {
+    margin-top: 0px;
+}
+
+.experienciaObjeto:last-child {
+    margin-bottom: 0px;
+}
+.experienciaObjetoTitulo {
+    margin-bottom: 4px;
+}
+
+/* FORMULARIO */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.formularioAsunto {
+    margin: 16px 0px;
+    padding: 0px 16px;
+    height: 42px;
+    min-width: 174px;
+    border-radius: 4px;
+    background-color: var(--blancoObscuro);
+    border: 2px solid var(--blanco);
+    color: var(--blanco);
+}
+
+.formularioMensaje {
+    margin-bottom: ;
+    padding: 0px 16px;
+    height: 100px;
+    min-width: 174px;
+    max-width: 100%;
+    max-height: 200px;
+    min-height: 42px;
+    border-radius: 4px;
+    border: 2px solid var(--blanco);
+    background-color: var(--blancoObscuro);
+    font-family: var(--dmSans);
+    color: var(--blanco);
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--gris);
+    border-top: 4px solid var(--rojo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+    padding: 0px 20px;
+}
+
+.footerSocialContenedor {
+    width: 20px;
+    height: 20px;
+}
+
+.footerSocialContenedor:nth-child(2) {
+    margin: 0px 12px;
+}
+
+.footerImg {
+    width: 20px;
+    height: 20px;
+}
+
+.footerRedes {
+    display: flex;
+}
+
+
